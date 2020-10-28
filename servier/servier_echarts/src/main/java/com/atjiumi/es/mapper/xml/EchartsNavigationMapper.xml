@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atjiumi.es.mapper.EchartsNavigationMapper">
+
+    <select id="selectHistoryData" resultType="com.atjiumi.es.entity.EchartsNavigation">
+        SELECT * FROM (SELECT  currency,customs_code AS NAME,SUM(t) AS VALUE FROM (
+       SELECT  bill_no,currency,customs_code ,SUM(total_goods_value) AS t FROM bco_declaration_statistics GROUP BY bill_no,currency,customs_code) AS k
+       GROUP BY k.currency,k.customs_code ) AS j WHERE NAME=5314 OR NAME=5349
+    </select>
+
+
+    <insert id="insertEchartsEchartsNavigation" parameterType="java.util.List">
+        INSERT INTO echarts_navigation(NAME,VALUE) VALUES
+        <foreach collection="list" item="balance" separator="," close=";" >
+            (#{balance.name},#{balance.value})
+        </foreach>
+    </insert>
+
+    <delete id="deleteEchartsEchartsNavigation">
+        DELETE FROM echarts_navigation
+    </delete>
+
+    <resultMap id="res" type="com.atjiumi.es.entity.EchartsNavigation">
+        <result column="name" property="name"/>
+        <result column="value" property="value"/>
+    </resultMap>
+    <select id="selectEchartsEchartsNavigation" resultMap="res">
+        select * from echarts_navigation
+    </select>
+
+</mapper>

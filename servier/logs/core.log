@@ -1,0 +1,220 @@
+2020-10-21 14:15:48.646  INFO 15656 --- [main] com.atjiumi.demo.testDemo                : Starting testDemo on DESKTOP-HVLJB7O with PID 15656 (started by szl in C:\beifen\wrok\ideaProject\sz_echarts\servier\servier_echarts)
+2020-10-21 14:15:48.675 DEBUG 15656 --- [main] com.atjiumi.demo.testDemo                : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-10-21 14:15:48.676  INFO 15656 --- [main] com.atjiumi.demo.testDemo                : The following profiles are active: dev
+2020-10-21 14:15:58.194  INFO 15656 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-21 14:15:59.697  INFO 15656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-10-21 14:15:59.729  INFO 15656 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-21 14:15:59.729  INFO 15656 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-10-21 14:16:01.033  INFO 15656 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-10-21 14:16:01.058  INFO 15656 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-21 14:16:01.059  INFO 15656 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 12330 ms
+2020-10-21 14:16:01.080  INFO 15656 --- [main] c.atjiumi.es.Config.DruidConfiguration   : init Druid Servlet Configuration 
+2020-10-21 14:16:03.046  INFO 15656 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-21 14:16:04.440  WARN 15656 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsBrokenLineGraph.
+2020-10-21 14:16:04.802  WARN 15656 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsBrokenLineGraphTwo.
+2020-10-21 14:16:04.977  WARN 15656 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsCommodity.
+2020-10-21 14:16:05.079  WARN 15656 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsMapChart.
+2020-10-21 14:16:05.166  WARN 15656 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsMap.
+2020-10-21 14:16:05.279  WARN 15656 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsNavigation.
+2020-10-21 14:16:05.347  WARN 15656 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsOrder.
+2020-10-21 14:16:05.456  WARN 15656 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsPie.
+2020-10-21 14:16:05.554  WARN 15656 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsTest.
+2020-10-21 14:16:05.771  WARN 15656 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsCircle.
+2020-10-21 14:16:09.122  INFO 15656 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-21 14:16:09.906  INFO 15656 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-21 14:16:10.211  INFO 15656 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-10-21 14:16:11.607  INFO 15656 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-10-21 14:16:12.504  INFO 15656 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-21 14:16:12.587  INFO 15656 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-21 14:16:12.737  INFO 15656 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-21 14:16:13.731  INFO 15656 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingGET_1
+2020-10-21 14:16:13.750  INFO 15656 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingHEAD_1
+2020-10-21 14:16:13.753  INFO 15656 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingPOST_1
+2020-10-21 14:16:13.757  INFO 15656 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingPUT_1
+2020-10-21 14:16:13.764  INFO 15656 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingPATCH_1
+2020-10-21 14:16:13.766  INFO 15656 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingDELETE_1
+2020-10-21 14:16:13.781  INFO 15656 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingOPTIONS_1
+2020-10-21 14:16:13.783  INFO 15656 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingTRACE_1
+2020-10-21 14:16:13.946  INFO 15656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 59811 (http) with context path ''
+2020-10-21 14:16:13.952  INFO 15656 --- [main] com.atjiumi.demo.testDemo                : Started testDemo in 27.103 seconds (JVM running for 33.654)
+2020-10-21 14:16:14.725  INFO 15656 --- [main] com.atjiumi.es.EchartsApplication        : 答应
+2020-10-21 14:16:14.756  INFO 15656 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-10-21 14:16:14.758  INFO 15656 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-21 14:16:14.763  INFO 15656 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-21 14:16:14.773  INFO 15656 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-21 14:19:56.728  INFO 17312 --- [main] com.atjiumi.demo.testDemo                : Starting testDemo on DESKTOP-HVLJB7O with PID 17312 (started by szl in C:\beifen\wrok\ideaProject\sz_echarts\servier\servier_echarts)
+2020-10-21 14:19:56.731 DEBUG 17312 --- [main] com.atjiumi.demo.testDemo                : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-10-21 14:19:56.731  INFO 17312 --- [main] com.atjiumi.demo.testDemo                : The following profiles are active: dev
+2020-10-21 14:20:03.523  INFO 17312 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-21 14:20:05.021  INFO 17312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-10-21 14:20:05.051  INFO 17312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-21 14:20:05.052  INFO 17312 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-10-21 14:20:06.743  INFO 17312 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-10-21 14:20:06.766  INFO 17312 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-21 14:20:06.766  INFO 17312 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9977 ms
+2020-10-21 14:20:06.806  INFO 17312 --- [main] c.atjiumi.es.Config.DruidConfiguration   : init Druid Servlet Configuration 
+2020-10-21 14:20:09.554  INFO 17312 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-21 14:20:11.333  WARN 17312 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsBrokenLineGraph.
+2020-10-21 14:20:11.799  WARN 17312 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsBrokenLineGraphTwo.
+2020-10-21 14:20:11.901  WARN 17312 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsCommodity.
+2020-10-21 14:20:12.068  WARN 17312 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsMapChart.
+2020-10-21 14:20:12.156  WARN 17312 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsMap.
+2020-10-21 14:20:12.327  WARN 17312 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsNavigation.
+2020-10-21 14:20:12.460  WARN 17312 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsOrder.
+2020-10-21 14:20:12.716  WARN 17312 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsPie.
+2020-10-21 14:20:12.980  WARN 17312 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsTest.
+2020-10-21 14:20:14.201  WARN 17312 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsCircle.
+2020-10-21 14:20:18.719  INFO 17312 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-21 14:20:20.096  INFO 17312 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-21 14:20:20.925  INFO 17312 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-10-21 14:20:22.966  INFO 17312 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-10-21 14:20:23.596  INFO 17312 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-21 14:20:23.718  INFO 17312 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-21 14:20:23.783  INFO 17312 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-21 14:20:24.304  INFO 17312 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingGET_1
+2020-10-21 14:20:24.310  INFO 17312 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingHEAD_1
+2020-10-21 14:20:24.312  INFO 17312 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingPOST_1
+2020-10-21 14:20:24.328  INFO 17312 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingPUT_1
+2020-10-21 14:20:24.334  INFO 17312 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingPATCH_1
+2020-10-21 14:20:24.340  INFO 17312 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingDELETE_1
+2020-10-21 14:20:24.343  INFO 17312 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingOPTIONS_1
+2020-10-21 14:20:24.346  INFO 17312 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingTRACE_1
+2020-10-21 14:20:24.565  INFO 17312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 59951 (http) with context path ''
+2020-10-21 14:20:24.594  INFO 17312 --- [main] com.atjiumi.demo.testDemo                : Started testDemo in 29.544 seconds (JVM running for 36.293)
+2020-10-21 14:20:25.083  INFO 17312 --- [main] com.atjiumi.demo.testDemo                : 答应
+2020-10-21 14:20:25.099  INFO 17312 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-10-21 14:20:25.101  INFO 17312 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-21 14:20:25.114  INFO 17312 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-21 14:20:25.121  INFO 17312 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-21 14:22:37.934  INFO 11292 --- [main] com.atjiumi.demo.testDemo                : Starting testDemo on DESKTOP-HVLJB7O with PID 11292 (started by szl in C:\beifen\wrok\ideaProject\sz_echarts\servier\servier_echarts)
+2020-10-21 14:22:37.937 DEBUG 11292 --- [main] com.atjiumi.demo.testDemo                : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-10-21 14:22:37.938  INFO 11292 --- [main] com.atjiumi.demo.testDemo                : The following profiles are active: dev
+2020-10-21 14:22:42.991  INFO 11292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-21 14:22:44.169  INFO 11292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-10-21 14:22:44.198  INFO 11292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-21 14:22:44.199  INFO 11292 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-10-21 14:22:45.437  INFO 11292 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-10-21 14:22:45.469  INFO 11292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-21 14:22:45.470  INFO 11292 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7335 ms
+2020-10-21 14:22:45.518  INFO 11292 --- [main] c.atjiumi.es.Config.DruidConfiguration   : init Druid Servlet Configuration 
+2020-10-21 14:22:47.288  INFO 11292 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-21 14:22:48.732  WARN 11292 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsBrokenLineGraph.
+2020-10-21 14:22:49.079  WARN 11292 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsBrokenLineGraphTwo.
+2020-10-21 14:22:49.355  WARN 11292 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsCommodity.
+2020-10-21 14:22:49.525  WARN 11292 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsMapChart.
+2020-10-21 14:22:49.622  WARN 11292 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsMap.
+2020-10-21 14:22:49.772  WARN 11292 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsNavigation.
+2020-10-21 14:22:49.852  WARN 11292 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsOrder.
+2020-10-21 14:22:49.951  WARN 11292 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsPie.
+2020-10-21 14:22:50.090  WARN 11292 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsTest.
+2020-10-21 14:22:50.526  WARN 11292 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsCircle.
+2020-10-21 14:22:53.940  INFO 11292 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-21 14:22:54.745  INFO 11292 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-21 14:22:55.063  INFO 11292 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-10-21 14:22:57.300  INFO 11292 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-10-21 14:22:58.031  INFO 11292 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-21 14:22:58.143  INFO 11292 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-21 14:22:58.379  INFO 11292 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-21 14:22:59.055  INFO 11292 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingGET_1
+2020-10-21 14:22:59.059  INFO 11292 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingHEAD_1
+2020-10-21 14:22:59.061  INFO 11292 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingPOST_1
+2020-10-21 14:22:59.063  INFO 11292 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingPUT_1
+2020-10-21 14:22:59.075  INFO 11292 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingPATCH_1
+2020-10-21 14:22:59.076  INFO 11292 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingDELETE_1
+2020-10-21 14:22:59.076  INFO 11292 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingOPTIONS_1
+2020-10-21 14:22:59.080  INFO 11292 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingTRACE_1
+2020-10-21 14:22:59.246  INFO 11292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60011 (http) with context path ''
+2020-10-21 14:22:59.261  INFO 11292 --- [main] com.atjiumi.demo.testDemo                : Started testDemo in 22.799 seconds (JVM running for 26.359)
+2020-10-21 14:23:00.158  INFO 11292 --- [main] com.atjiumi.demo.testDemo                : 答应
+2020-10-21 14:23:00.186  INFO 11292 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-10-21 14:23:00.187  INFO 11292 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-21 14:23:00.197  INFO 11292 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-21 14:23:00.206  INFO 11292 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-21 14:38:03.017  INFO 16748 --- [main] com.atjiumi.demo.testDemo                : Starting testDemo on DESKTOP-HVLJB7O with PID 16748 (started by szl in C:\beifen\wrok\ideaProject\sz_echarts\servier\servier_echarts)
+2020-10-21 14:38:03.021 DEBUG 16748 --- [main] com.atjiumi.demo.testDemo                : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-10-21 14:38:03.021  INFO 16748 --- [main] com.atjiumi.demo.testDemo                : The following profiles are active: dev
+2020-10-21 14:38:07.193  INFO 16748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-21 14:38:07.936  INFO 16748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-10-21 14:38:07.950  INFO 16748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-21 14:38:07.950  INFO 16748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-10-21 14:38:08.629  INFO 16748 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-10-21 14:38:08.639  INFO 16748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-21 14:38:08.639  INFO 16748 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5574 ms
+2020-10-21 14:38:08.657  INFO 16748 --- [main] c.atjiumi.es.Config.DruidConfiguration   : init Druid Servlet Configuration 
+2020-10-21 14:38:09.588  INFO 16748 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-21 14:38:10.395  WARN 16748 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsBrokenLineGraph.
+2020-10-21 14:38:10.522  WARN 16748 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsBrokenLineGraphTwo.
+2020-10-21 14:38:10.600  WARN 16748 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsCommodity.
+2020-10-21 14:38:10.665  WARN 16748 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsMapChart.
+2020-10-21 14:38:10.736  WARN 16748 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsMap.
+2020-10-21 14:38:10.793  WARN 16748 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsNavigation.
+2020-10-21 14:38:10.855  WARN 16748 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsOrder.
+2020-10-21 14:38:10.935  WARN 16748 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsPie.
+2020-10-21 14:38:11.025  WARN 16748 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsTest.
+2020-10-21 14:38:11.168  WARN 16748 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsCircle.
+2020-10-21 14:38:12.581  INFO 16748 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-21 14:38:12.898  INFO 16748 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-21 14:38:13.033  INFO 16748 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-10-21 14:38:13.748  INFO 16748 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-10-21 14:38:14.282  INFO 16748 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-21 14:38:14.384  INFO 16748 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-21 14:38:14.475  INFO 16748 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-21 14:38:14.857  INFO 16748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingGET_1
+2020-10-21 14:38:14.860  INFO 16748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingHEAD_1
+2020-10-21 14:38:14.861  INFO 16748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingPOST_1
+2020-10-21 14:38:14.863  INFO 16748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingPUT_1
+2020-10-21 14:38:14.865  INFO 16748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingPATCH_1
+2020-10-21 14:38:14.867  INFO 16748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingDELETE_1
+2020-10-21 14:38:14.868  INFO 16748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingOPTIONS_1
+2020-10-21 14:38:14.870  INFO 16748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingTRACE_1
+2020-10-21 14:38:14.972  INFO 16748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60987 (http) with context path ''
+2020-10-21 14:38:14.978  INFO 16748 --- [main] com.atjiumi.demo.testDemo                : Started testDemo in 12.853 seconds (JVM running for 15.915)
+2020-10-21 14:38:15.359  INFO 16748 --- [main] com.atjiumi.demo.testDemo                : 打印日志
+2020-10-21 14:38:15.389  INFO 16748 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-10-21 14:38:15.390  INFO 16748 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-21 14:38:15.399  INFO 16748 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-21 14:38:15.409  INFO 16748 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-21 15:32:06.250  INFO 19188 --- [main] com.atjiumi.demo.testDemo                : Starting testDemo on DESKTOP-HVLJB7O with PID 19188 (started by szl in C:\beifen\wrok\ideaProject\sz_echarts\servier\servier_echarts)
+2020-10-21 15:32:06.252 DEBUG 19188 --- [main] com.atjiumi.demo.testDemo                : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2020-10-21 15:32:06.253  INFO 19188 --- [main] com.atjiumi.demo.testDemo                : The following profiles are active: dev
+2020-10-21 15:32:10.155  INFO 19188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-21 15:32:10.919  INFO 19188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-10-21 15:32:10.934  INFO 19188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-21 15:32:10.934  INFO 19188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-10-21 15:32:11.689  INFO 19188 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-10-21 15:32:11.706  INFO 19188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-21 15:32:11.707  INFO 19188 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5407 ms
+2020-10-21 15:32:11.730  INFO 19188 --- [main] c.atjiumi.es.Config.DruidConfiguration   : init Druid Servlet Configuration 
+2020-10-21 15:32:12.695  INFO 19188 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-21 15:32:13.621  WARN 19188 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsBrokenLineGraph.
+2020-10-21 15:32:13.762  WARN 19188 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsBrokenLineGraphTwo.
+2020-10-21 15:32:13.869  WARN 19188 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsCommodity.
+2020-10-21 15:32:13.961  WARN 19188 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsMapChart.
+2020-10-21 15:32:14.028  WARN 19188 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsMap.
+2020-10-21 15:32:14.116  WARN 19188 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsNavigation.
+2020-10-21 15:32:14.166  WARN 19188 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsOrder.
+2020-10-21 15:32:14.223  WARN 19188 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsPie.
+2020-10-21 15:32:14.323  WARN 19188 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsTest.
+2020-10-21 15:32:14.558  WARN 19188 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.atjiumi.es.entity.EchartsCircle.
+2020-10-21 15:32:16.616  INFO 19188 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-21 15:32:17.319  INFO 19188 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-21 15:32:17.437  INFO 19188 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-10-21 15:32:18.084  INFO 19188 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-10-21 15:32:18.518  INFO 19188 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-21 15:32:18.557  INFO 19188 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-21 15:32:18.616  INFO 19188 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-21 15:32:18.932  INFO 19188 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingGET_1
+2020-10-21 15:32:18.937  INFO 19188 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingHEAD_1
+2020-10-21 15:32:18.940  INFO 19188 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingPOST_1
+2020-10-21 15:32:18.942  INFO 19188 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingPUT_1
+2020-10-21 15:32:18.944  INFO 19188 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingPATCH_1
+2020-10-21 15:32:18.945  INFO 19188 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingDELETE_1
+2020-10-21 15:32:18.946  INFO 19188 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingOPTIONS_1
+2020-10-21 15:32:18.949  INFO 19188 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findallUsingTRACE_1
+2020-10-21 15:32:19.059  INFO 19188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63005 (http) with context path ''
+2020-10-21 15:32:19.066  INFO 19188 --- [main] com.atjiumi.demo.testDemo                : Started testDemo in 13.973 seconds (JVM running for 16.437)
+2020-10-21 15:32:19.584  INFO 19188 --- [main] com.atjiumi.demo.testDemo                : 打印日志
+2020-10-21 15:32:19.603  INFO 19188 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-10-21 15:32:19.604  INFO 19188 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-21 15:32:19.608  INFO 19188 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-10-21 15:32:19.614  INFO 19188 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

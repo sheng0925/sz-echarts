@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atjiumi.es.mapper.EchartsMapChartMapper">
+
+
+    <select id="selectJInTianData" resultType="com.atjiumi.es.entity.EchartsMapChart">
+        SELECT  customs_code  AS NAME,currency,SUM(tvalue) AS VALUE FROM (
+        SELECT bill_no ,currency,customs_code,SUM(total_goods_value)AS tvalue FROM
+        (SELECT * FROM bco_declaration_statistics WHERE DATEDIFF(ie_date,NOW())=-14) AS k
+        GROUP BY bill_no , currency,customs_code ) AS j GROUP BY j.customs_code,j.currency
+    </select>
+
+
+
+
+    <insert id="INSERTMapChartTodayTop" parameterType="java.util.List">
+        INSERT INTO echarts_map_chart (NAME,currency,VALUE) VALUES
+        <!--item就是List里每一项的对象名，要用","分割每一条数据，最后要";"结尾-->
+        <foreach collection="list" item="balance" separator="," close=";">
+            (#{balance.name},#{balance.currency},#{balance.value})
+        </foreach>
+    </insert>
+
+
+    <delete id="deleteMapChartAll">
+        DELETE FROM echarts_map_chart
+    </delete>
+
+    <select id="selectEcsTransactionAmount" resultType="com.atjiumi.es.entity.EchartsMapChart">
+        SELECT * FROM echarts_map_chart
+    </select>
+
+</mapper>

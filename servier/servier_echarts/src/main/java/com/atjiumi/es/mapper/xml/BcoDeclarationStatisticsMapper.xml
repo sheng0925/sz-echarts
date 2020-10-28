@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atjiumi.es.mapper.BcoDeclarationStatisticsMapper">
+
+    <select id="selectById" resultType="com.atjiumi.es.entity.BcoDeclarationStatistics">
+        SELECT * FROM bco_declaration_statistics WHERE id ='206592388330688512A29'
+    </select>
+    <insert id="InsertBcoDeclarationStatistics">
+        INSERT INTO bco_declaration_statistics(id,ebc_code,ebc_name,logistics_code,logistics_name,statistics_flag,country,pod,bill_no,logistics_total,
+        total_pack_no,total_goods_value,total_gross_weight,customs_code,currency,port_code,ie_flag,ie_date,traf_mode,domestic_traf_no,goods_info,voyage_no,status,create_time,update_time) VALUES
+        <foreach collection="list" item="balance" separator="," close=";">
+            (#{balance.id},#{balance.ebcCode},#{balance.ebcName},#{balance.logisticsCode},#{balance.logisticsName},#{balance.statisticsFlag},#{balance.country},#{balance.pod},#{balance.billNo},#{balance.logisticsTotal}
+            ,#{balance.totalPackNo},#{balance.totalGoodsValue},#{balance.totalGrossWeight},#{balance.customsCode},#{balance.currency},#{balance.portCode},#{balance.ieFlag},#{balance.ieDate},#{balance.trafMode}
+            ,#{balance.domesticTrafNo},#{balance.goodsInfo},#{balance.voyageNo},#{balance.status},#{balance.createTime},#{balance.updateTime})
+        </foreach>
+    </insert>
+
+    <delete id="DeleteNine">
+        DELETE  FROM  bco_declaration_statistics WHERE ie_date='20201009'
+    </delete>
+</mapper>

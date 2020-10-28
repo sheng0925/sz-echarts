@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atjiumi.es.mapper.EchartsOrderMapper">
+
+    <!--测试今天汇率-->
+    <select id="selectTestcurrency" resultType="com.atjiumi.es.entity.EchartsOrder">
+--         SELECT 'name', currency,SUM(tvalue) AS sumMoney ,SUM(tweight) AS sumweight,COUNT(*) AS sumOrder FROM (
+--         SELECT bill_no ,currency,SUM(total_goods_value)AS tvalue ,SUM(total_gross_weight) AS tweight  FROM
+--         (SELECT * FROM bco_declaration_statistics WHERE DATEDIFF(create_time,NOW())=-17) AS k
+--         GROUP BY bill_no,currency) AS j GROUP BY j.currency
+             SELECT 'name', currency,SUM(total_goods_value)AS sumMoney ,SUM(total_gross_weight) AS sumweight,SUM(total_pack_no) AS sumOrder
+        FROM bco_declaration_statistics WHERE DATEDIFF(ie_date,NOW())=-7 GROUP BY currency
+    </select>
+
+    <!--测试近一个月的数据-->
+    <select id="selectTestMonth" resultType="com.atjiumi.es.entity.EchartsOrder">
+--         SELECT 'name', currency,SUM(tvalue) AS sumMoney ,SUM(tweight) AS sumweight,COUNT(*) AS sumOrder FROM (
+--         SELECT bill_no ,currency,SUM(total_goods_value)AS tvalue ,SUM(total_gross_weight) AS tweight  FROM
+--         (SELECT * FROM bco_declaration_statistics WHERE DATE_FORMAT( create_time, '%Y%m' ) = DATE_FORMAT( CURDATE( ) , '%Y%m' )) AS k
+--         GROUP BY bill_no,currency) AS j GROUP BY j.currency
+ SELECT 'name', currency,SUM(total_goods_value)AS sumMoney ,SUM(total_gross_weight) AS sumWeight,SUM(total_pack_no) AS sumOrder
+         FROM bco_declaration_statistics WHERE DATE_FORMAT( ie_date, '%Y%m' ) = DATE_FORMAT( CURDATE( ) , '%Y%m' ) GROUP BY currency
+    </select>
+
+    <!--测试今年的数据-->
+    <select id="selectTestOneYear" resultType="com.atjiumi.es.entity.EchartsOrder">
+--         SELECT 'name', currency,SUM(tvalue) AS sumMoney ,SUM(tweight) AS sumweight,COUNT(*) AS sumOrder FROM (
+--         SELECT bill_no ,currency,SUM(total_goods_value)AS tvalue ,SUM(total_gross_weight) AS tweight  FROM
+--         (SELECT * FROM `bco_declaration_statistics` WHERE YEAR(create_time)=YEAR(NOW())) AS k
+--         GROUP BY bill_no,currency) AS j GROUP BY j.currency
+        SELECT 'name', currency,SUM(total_goods_value)AS sumMoney,SUM(total_gross_weight) AS sumweight,SUM(total_pack_no) AS sumOrder
+         FROM `bco_declaration_statistics` WHERE YEAR(ie_date)=YEAR(NOW())GROUP BY currency
+    </select>
+
+
+    <!--测试去年的数据-->
+    <select id="selectLastYearCurrency" resultType="com.atjiumi.es.entity.EchartsOrder">
+--         SELECT 'name', currency,SUM(tvalue) AS sumMoney ,SUM(tweight) AS sumweight,COUNT(*) AS sumOrder FROM (
+--         SELECT bill_no ,currency,SUM(total_goods_value)AS tvalue ,SUM(total_gross_weight) AS tweight  FROM
+--          (SELECT * FROM `bco_declaration_statistics` WHERE YEAR(create_time)=YEAR(DATE_SUB(NOW(),INTERVAL 1 YEAR))) AS k
+--         GROUP BY bill_no,currency) AS j GROUP BY j.currency
+        SELECT 'name', currency,SUM(total_goods_value)AS sumMoney,SUM(total_gross_weight) AS sumweight,SUM(total_pack_no) AS sumOrder
+        FROM `bco_declaration_statistics` WHERE YEAR(ie_date)=YEAR(DATE_SUB(NOW(),INTERVAL 1 YEAR))GROUP BY currency
+    </select>
+
+
+    <!--插入订单数据-->
+    <insert id="InsertEchartsOrdert" parameterType="java.util.List">
+        INSERT INTO echarts_order(name,sumMoney,sumweight,sumOrder) VALUES
+        <foreach collection="list" item="balance" separator=","  close=";" >
+            (#{balance.name},#{balance.sumMoney},#{balance.sumWeight},#{balance.sumOrder})
+        </foreach>
+    </insert>
+
+    <!--删除表中所有数据-->
+    <delete id="deleteEchartsOrder" >
+        DELETE FROM echarts_order
+    </delete>
+
+    <resultMap id="res" type="com.atjiumi.es.entity.EchartsOrder">
+        <result column="NAME" property="name"></result>
+        <result column="sumMoney" property="sumMoney"></result>
+        <result column="sumWeight" property="sumWeight"></result>
+        <result column="sumOrder" property="sumOrder"></result>
+    </resultMap>
+
+    <select id="selectEchartsOrder" resultMap="res">
+            select * from echarts_order
+    </select>
+
+</mapper>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atjiumi.es.mapper.EchartsMapMapper">
+
+    <resultMap id="res" type="com.atjiumi.es.entity.EchartsMap">
+        <result column="NAME" property="name"></result>
+        <result column="destination" property="destination"></result>
+        <result column="VALUE" property="value"></result>
+    </resultMap>
+
+
+    <select id="selectTodayPod" resultMap="res">
+        SELECT country AS NAME,'destination'  ,SUM(total_pack_no)AS  VALUE FROM
+        (SELECT * FROM bco_declaration_statistics WHERE DATEDIFF(ie_date,NOW())=-3) AS t
+         GROUP BY country ORDER BY country DESC
+    </select>
+
+
+    <insert id="insertEchartsMaps" parameterType="java.util.List">
+        INSERT INTO echarts_map(NAME,destination,VALUE) VALUES
+        <foreach collection="list" item="balance" separator="," close=";" >
+            (#{balance.name},#{balance.destination},#{balance.value})
+        </foreach>
+    </insert>
+
+    <delete id="deleteEchartsMaps">
+        delete from  echarts_map
+    </delete>
+
+    <select id="selectEchartsMaps" resultType="com.atjiumi.es.entity.EchartsMap">
+        select * from echarts_map
+    </select>
+
+
+</mapper>

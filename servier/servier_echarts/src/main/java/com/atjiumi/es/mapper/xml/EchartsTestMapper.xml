@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atjiumi.es.mapper.EchartsTestMapper">
+
+    <select id="selectByName" resultType="com.atjiumi.es.entity.EchartsTest">
+        select * from echarts_test where name=#{name}
+    </select>
+
+    <!--关系映射-->
+    <resultMap id="res" type="com.atjiumi.es.entity.EchartsTest">
+        <result column="t" property="value"/>
+        <result column="country" property="name"/>
+    </resultMap>
+    <select id="selectAll" resultMap="res">
+    SELECT  k.country ,SUM(tota) AS t  FROM
+      (SELECT  bill_no, country , SUM(total_pack_no) AS tota, COUNT(*) AS cc FROM
+     bco_declaration_statistics
+       GROUP BY bill_no, country ORDER BY cc DESC) AS k
+      GROUP BY k.country ORDER BY t DESC LIMIT 8
+    </select>
+
+    <insert id="insertEchartsTest" parameterType="java.util.List">
+        INSERT INTO echarts_test (NAME,VALUE) VALUES
+        <foreach collection="list" item="balance" separator="," close=";">
+            (#{balance.name},#{balance.value})
+        </foreach>
+    </insert>
+
+    <delete id="deleteEchartsTest" >
+        Delete FROM echarts_test
+    </delete>
+
+    <select id="selectEchartsTest" resultType="com.atjiumi.es.entity.EchartsTest">
+            select * from echarts_test
+    </select>
+
+</mapper>

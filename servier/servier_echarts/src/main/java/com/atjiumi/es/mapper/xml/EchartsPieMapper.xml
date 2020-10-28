@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atjiumi.es.mapper.EchartsPieMapper">
+
+    <select id="selectPieTopThree" resultType="com.atjiumi.es.entity.EchartsPie">
+      SELECT traf_mode AS NAME,COUNT(*) AS VALUE FROM
+      (SELECT  bill_no,traf_mode,COUNT(*) AS cc FROM bco_declaration_statistics
+       GROUP BY bill_no,traf_mode ORDER BY cc DESC) AS k
+      GROUP BY k.traf_mode
+    </select>
+
+
+    <insert id="INSERTPieTodayTop" parameterType="java.util.List">
+      INSERT INTO echarts_pie (NAME,VALUE) VALUES
+        <!--item就是List里每一项的对象名，要用","分割每一条数据，最后要";"结尾-->
+        <foreach collection="list" item="balance" separator="," close=";">
+            (#{balance.name},#{balance.value})
+        </foreach>
+    </insert>
+
+
+    <delete id="deletePieAll">
+       DELETE FROM echarts_pie
+    </delete>
+
+
+    <select id="selectTodayTraffic" resultType="com.atjiumi.es.entity.EchartsPie">
+        SELECT * FROM echarts_pie
+    </select>
+</mapper>
